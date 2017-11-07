@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  api:
+    image: src.api
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    hostname: src
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    ports:
+      - "80:80"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"

@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Andrey Popov",
+    "classifications": [ "api", "swagger", "docker" ],
+    "identity": "Popov1024.HttpApi.Template.CSharp",
+    "name": "ASP.NET Core Web API (extended)",
+    "shortName": "httpapi",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "src.api",
+    "preferNameDirectory": true
+}
