@@ -29,7 +29,7 @@ cd my-api-project
 
 Create solution:
 ```
-dotnot new httpapi 
+dotnet new httpapi 
 ```
 
 Run http api using docker-compose:
