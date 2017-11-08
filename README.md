@@ -5,7 +5,7 @@
 It's template for dotnetcore 2.0 based on standart `ASP.NET Core Web API` (`webapi`).
 Included [swagger](https://swagger.io/) and [docker](https://www.docker.com/).
 
-The templating solution consist from three progect:
+The templating solution consist of three progect:
 * `api` (`/src`) - the very simple api as example 
 * `test` (`/test`) based on `mstest`
 * `docker-compose` for build and run as a docker container.
