@@ -8,7 +8,7 @@
     </description>
     <authors>Andrey Popov</authors>
     <owners>Andrey Popov</owners>
-    <projectUrl>https://github.com/popov1024/httapi-template-sharp</projectUrl>
+    <projectUrl>https://github.com/popov1024/httpapi-template-sharp</projectUrl>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
