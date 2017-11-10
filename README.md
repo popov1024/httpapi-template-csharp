@@ -12,12 +12,12 @@ The templating solution consist of three progect:
 
 ## Install template
 ```
-dotnet new -i "Popov1024.HttApi.Template.CSharp::*"
+dotnet new -i "Popov1024.HttpApi.Template.CSharp::*"
 ```
 
 ## Uninstall template
 ```
-dotnet new -u Popov1024.HttApi.Template.CSharp
+dotnet new -u Popov1024.HttpApi.Template.CSharp
 ```
 
 ## Using
