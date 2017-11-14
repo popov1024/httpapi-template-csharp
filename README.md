@@ -7,17 +7,17 @@ Included [swagger](https://swagger.io/) and [docker](https://www.docker.com/).
 
 The templating solution consist of three progect:
 * `api` (`/src`) - the very simple api as example 
-* `test` (`/test`) based on `mstest`
+* `tests` (`/tests`) based on `mstest`
 * `docker-compose` for build and run as a docker container.
 
 ## Install template
 ```
-dotnet new -i "Popov1024.HttApi.Template.CSharp::*"
+dotnet new -i "Popov1024.HttpApi.Template.CSharp::*"
 ```
 
 ## Uninstall template
 ```
-dotnet new -u Popov1024.HttApi.Template.CSharp
+dotnet new -u Popov1024.HttpApi.Template.CSharp
 ```
 
 ## Using
