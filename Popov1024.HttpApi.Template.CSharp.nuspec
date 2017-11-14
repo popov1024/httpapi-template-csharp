@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Popov1024.HttpApi.Template.CSharp</id>
-    <version>2.0</version>
+    <version>2.0.1</version>
     <description>
       HTTP Api template. Included swagger and docker
     </description>
     <authors>Andrey Popov</authors>
     <owners>Andrey Popov</owners>
-    <projectUrl>https://github.com/popov1024/httapi-template-sharp</projectUrl>
+    <projectUrl>https://github.com/popov1024/httpapi-template-sharp</projectUrl>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>The frirst version</releaseNotes>
+    <releaseNotes>Add pagginator</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>csharp dotnet aspnet core template web http rest api swagger docker</tags>
   </metadata>
