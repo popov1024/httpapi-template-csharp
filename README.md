@@ -23,8 +23,8 @@ dotnet new -u Popov1024.HttpApi.Template.CSharp
 ## Using
 Make some dir:
 ```
-mkdir my-api-project
-cd my-api-project
+mkdir my_api_project
+cd my_api_project
 ```
 
 Create solution:
