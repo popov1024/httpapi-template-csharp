@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Popov1024.HttpApi.Template.CSharp</id>
-    <version>2.0.2</version>
+    <version>2.0.7.1</version>
     <description>
       HTTP Api template. Included swagger and docker
     </description>
@@ -13,8 +13,10 @@
       <packageType name="Template" />
     </packageTypes>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>typo fix</releaseNotes>
-    <copyright>Copyright 2017</copyright>
+    <releaseNotes>
+      New packages, use env and new Dockerfile for build
+    </releaseNotes>
+    <copyright>Copyright 2017-2018</copyright>
     <tags>csharp dotnet aspnet core template web http rest api swagger docker</tags>
   </metadata>
 </package>

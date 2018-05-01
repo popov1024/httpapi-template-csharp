@@ -36,7 +36,7 @@ Run http api using docker-compose:
 ```
 docker-compose up --build -d
 ```
-And you can see the result: http://localhost
+And you can see the result: http://localhost/example/swagger
 
 ... or run using dotnet runtine:
 ```
