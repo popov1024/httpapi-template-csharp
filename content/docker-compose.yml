@@ -1,4 +1,11 @@
-version: '3'
+version: '3.4'
+
+x-logging:
+  &default-logging
+  options:
+    max-size: "10m"
+    max-file: "5"
+  driver: json-file
 
 services:
   api:
@@ -8,12 +15,4 @@ services:
       dockerfile: Dockerfile
     hostname: src
     restart: always
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Production
-    ports:
-      - "80:80"
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "5"
+    logging: *default-logging

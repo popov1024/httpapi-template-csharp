@@ -1,10 +1,18 @@
-FROM  microsoft/aspnetcore-build:1.0-2.0 as BUILD
-COPY ./ /apps
-WORKDIR /apps
-RUN bash -c "dotnet restore ./src.api.csproj && dotnet publish ./src.api.csproj -c Release -o ./obj/Docker/publish"
-
-FROM microsoft/aspnetcore:2.0
+FROM microsoft/aspnetcore:2.0.7 AS base
 WORKDIR /app
 EXPOSE 80
-COPY --from=BUILD /apps/obj/Docker/publish .
+
+FROM microsoft/aspnetcore-build:2.0.7-2.1.105 AS build
+WORKDIR /apps
+COPY . .
+WORKDIR /apps
+RUN dotnet restore -nowarn:msb3202,nu1503
+RUN dotnet build --no-restore -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish --no-restore -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "src.api.dll"]
