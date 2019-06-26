@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using src.api.ViewModel;
-
-namespace src.api.Controllers.v1
+﻿namespace src.api.Controllers.v1
 {
+    using System.Collections.Generic;
+    using Microsoft.AspNetCore.Mvc;
+    using src.api.ViewModel;
+
     [Route("api/v1/[controller]")]
     public class ValuesController : Controller
     {

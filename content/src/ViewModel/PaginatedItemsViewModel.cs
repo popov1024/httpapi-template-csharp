@@ -1,7 +1,7 @@
-using System.Collections.Generic;
-
 namespace src.api.ViewModel
 {
+    using System.Collections.Generic;
+
     public class PaginatedItemsViewModel<TEntity> where TEntity : class
     {
         public int PageIndex { get; private set; }
